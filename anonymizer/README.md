@@ -2,7 +2,27 @@
 
 This is a simple desktop application to help you anonymize sensitive data in your logs or other texts. It masks common sensitive information like email addresses, phone numbers, and IP addresses.
 
-## How to Run
+## Building the Application (Recommended)
+
+To create a standalone executable that you can run without installing Python or any dependencies, you can use `pyinstaller`.
+
+1.  **Install `pyinstaller`:**
+    ```sh
+    pip install pyinstaller
+    ```
+
+2.  **Run `pyinstaller`:**
+    From the root of the project, run the following command:
+    ```sh
+    pyinstaller main.spec
+    ```
+
+3.  **Run the executable:**
+    The executable file will be located in the `dist` directory. You can run it from there.
+
+## Running from Source
+
+If you have Python installed, you can also run the application directly from the source code.
 
 1.  **Navigate to the `app` directory:**
     ```sh
