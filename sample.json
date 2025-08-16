@@ -1,0 +1,11 @@
+{
+  "login": "john.doe",
+  "ip": "192.168.1.12",
+  "email": "john.doe@example.com",
+  "adresse": "123 Rue Lafayette, Paris",
+  "iban": "FR76 3000 6000 0112 3456 7890 189",
+  "mot_de_passe": "MySecret123!",
+  "hostname": "dpdnprod31002.cdc.fr",
+  "password": "abc123",
+  "notes": "This user's IP is 192.168.1.12 and their email is john.doe@example.com"
+}

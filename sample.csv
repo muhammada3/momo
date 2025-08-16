@@ -1,0 +1,2 @@
+login,ip,email,adresse,iban,mot_de_passe,hostname,password,notes
+jane.doe,203.0.113.45,jane.doe@example.com,"456 Avenue de la Republique, Lyon",FR14 2004 1010 0505 0001 3M02 606,AnotherSecret!,"web-dev-server01",xyz456,"Contact via email: jane.doe@example.com"
