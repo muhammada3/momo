@@ -58,3 +58,5 @@
 [2025-08-14 20:58:02] INFO user=emercier ip=198.51.100.85 email="emma.mercier@example.com" adresse="155 Allée des Fichiers, 31000 Toulouse, FR" iban="FR84 5298 7903 56UK ZTV6 685T 412" mot_de_passe="#fferQ8%6t>$r"
 [2025-08-14 20:58:43] WARN user=apetit ip=203.0.113.36 email="aya.petit@example.org" adresse="153 Chemin du Sample, 75001 Paris, FR" iban="FR82 8504 7244 04MB 2U0J 0N06 417" mot_de_passe="+_Dg+9v^WsFe"
 [2025-08-14 20:59:32] ERROR user=elefevre ip=203.0.113.174 email="emma.lefevre@example.net" adresse="97 Boulevard des Données, 33000 Bordeaux, FR" iban="FR71 8314 9491 24OT SN5U 4W9R S25" mot_de_passe="6&R*TH?9yFJ"  hostname: dbdnprod51
+[2025-08-14 21:00:00] INFO user=testuser ip=127.0.0.1 email="test@test.com" adresse="123 Test Street" iban="FR00 1234 5678 9012 3456 7890 123" mot_de_passe="test" password=testpass
+[2025-08-14 21:01:00] DEBUG user=dev ip=10.0.0.1 email="dev@internal" adresse="Internal" iban="FR11 2222 3333 4444 5555 6666 777" mot_de_passe="dev" hostname: web-dev-server
