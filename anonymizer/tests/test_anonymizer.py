@@ -37,5 +37,25 @@ class TestAnonymizer(unittest.TestCase):
         text = ""
         self.assertEqual(anonymize_text(text), "")
 
+    def test_anonymize_text_with_credit_card_number(self):
+        text = "My credit card is 1234-5678-9012-3456."
+        expected = "My credit card is [CREDIT_CARD_REDACTED]."
+        self.assertEqual(anonymize_text(text), expected)
+
+    def test_anonymize_text_with_credit_card_number_spaces(self):
+        text = "My credit card is 1234 5678 9012 3456."
+        expected = "My credit card is [CREDIT_CARD_REDACTED]."
+        self.assertEqual(anonymize_text(text), expected)
+
+    def test_anonymize_text_with_credit_card_number_no_separator(self):
+        text = "My credit card is 1234567890123456."
+        expected = "My credit card is [CREDIT_CARD_REDACTED]."
+        self.assertEqual(anonymize_text(text), expected)
+
+    def test_anonymize_text_with_credit_card_number_15_digits(self):
+        text = "My credit card is 123456789012345."
+        expected = "My credit card is [CREDIT_CARD_REDACTED]."
+        self.assertEqual(anonymize_text(text), expected)
+
 if __name__ == '__main__':
     unittest.main()
