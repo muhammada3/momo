@@ -5,6 +5,7 @@ def anonymize_text(text: str) -> str:
     Anonymize email addresses, phone numbers, and IP addresses in a given text.
     """
     text = anonymize_emails(text)
+    text = anonymize_credit_cards(text)
     text = anonymize_phones(text)
     text = anonymize_ips(text)
     return text
@@ -32,3 +33,11 @@ def anonymize_ips(text: str) -> str:
     # A simple IPv4 regex
     ip_regex = re.compile(r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b')
     return ip_regex.sub('[IP_REDACTED]', text)
+
+def anonymize_credit_cards(text: str) -> str:
+    """
+    Masks credit card numbers in the text.
+    """
+    # Regex for common credit card numbers (Visa, Mastercard, Amex, Discover)
+    card_regex = re.compile(r'\b(?:\d[ -]*?){13,16}\b')
+    return card_regex.sub('[CREDIT_CARD_REDACTED]', text)
